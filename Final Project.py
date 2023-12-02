@@ -13,10 +13,21 @@ while True:
 name_of_customer = input("Name of Purchaser?: ")
 address = input("Shipping Address?: ")
 
+
 #Formatting
+print()
 print(f"------Billing Info------\n"
       f"\nContact Name: {name_of_customer}\n"
       f"Shipping Address: {address}\n"
       f"Item: {item}\n"
       f"Quantity: {amount}\n")
+#using constants
+SALES_TAX = 0.042
+LIMIT = 100
+#Refactoring Functions
+def calculate_total_amount(price, amount, sales_tax):
+    return (price * amount) * sales_tax + (price * amount)
 
+# ...
+
+totalamount = calculate_total_amount(price, amount, SALES_TAX)
