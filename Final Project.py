@@ -12,3 +12,11 @@ while True:
 
 name_of_customer = input("Name of Purchaser?: ")
 address = input("Shipping Address?: ")
+
+#Formatting
+print(f"------Billing Info------\n"
+      f"\nContact Name: {name_of_customer}\n"
+      f"Shipping Address: {address}\n"
+      f"Item: {item}\n"
+      f"Quantity: {amount}\n")
+
